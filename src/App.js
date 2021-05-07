@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from 'react';
 import './App.css';
 
@@ -10,9 +9,7 @@ import 'firebase/analytics';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-
 firebase.initializeApp({
-  // your config
   apiKey: "AIzaSyB-o9DAjNYOUj9zJO6T5jKLxnw9BlDW4mc",
   authDomain: "superchat-313e4.firebaseapp.com",
   projectId: "superchat-313e4",
@@ -25,6 +22,7 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
+
 
 function App() {
 
@@ -126,7 +124,6 @@ function ChatMessage(props) {
     </div>
   </>)
 }
-
 
 
 export default App;
